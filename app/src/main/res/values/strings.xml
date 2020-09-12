@@ -53,6 +53,21 @@
     <string name="menu_requests">Friend Requests</string>
     <string name="register_success_popup">Registered successfully.\nVerification email has been sent.\nPlease verify email.</string>
     <string name="recheck_gender">To save your changes, please check/recheck your GENDER.</string>
+    <string name="what_offers">
+        • User registration with e-mail and password.\n\n
+        • Email Verification with VERIFIED Profile TAG \n\n
+        • Supports text and image messages in personal as well as in group chats. \n\n
+        • Image cropping and Image Size Compressing facility in all image uploads for greater performance. \n\n
+        • Global Searching Mechanism to find any registered users. \n\n
+        • Send Friend Request to a person, Cancel, Un-friend and Decline request mechanism. \n\n
+        • No spam messages since only your friends can send you messages. \n\n
+        • Displaying Last Seen Time / Online Active Status of Users on Chat. \n\n
+        • Offline loading capability (as like Messenger, WhatsApp and others). \n\n
+        • Network Connectivity checker. \n\n
+        • New message and new friend request NOTIFICATION (Coming soon).
+    </string>
+    <string name="why_app">This app module can be easily integrated to any Android applications to facilitate one-to-one and one-to-many messaging services, thereby allowing developers to concentrate on the main functionality of their app. Contact developer to get the full code.</string>
+    <string name="what_is_rubixchat">RubixChat is a simple, lightweight messaging application build with clean code and fully customizable layouts for easy integration to other natively build Android applications.</string>
 
     <string-array name="spinerViewPeople">
         <item>Default</item>

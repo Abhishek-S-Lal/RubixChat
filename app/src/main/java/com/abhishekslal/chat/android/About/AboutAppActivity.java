@@ -14,7 +14,7 @@ import com.abhishekslal.chat.android.R;
 public class AboutAppActivity extends AppCompatActivity {
 
     private Toolbar mToolbar;
-    private Button gitBtn, InstaBtn, TwBtn, LinBtn;
+    private Button gitBtn, InstaBtn, TwBtn, LinBtn, WABtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +31,9 @@ public class AboutAppActivity extends AppCompatActivity {
         InstaBtn = findViewById(R.id.insta_btn);
         LinBtn = findViewById(R.id.lin_btn);
         TwBtn = findViewById(R.id.tw_btn);
+        WABtn = findViewById(R.id.wa_btn);
 
-        // 4 buttons
+        // 5 buttons
         // git button
         gitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +69,16 @@ public class AboutAppActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Uri uri = Uri.parse("https://twitter.com/AbhishekslalS");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
+
+        //whatsapp button
+        WABtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("https://wa.me/918921440482");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
