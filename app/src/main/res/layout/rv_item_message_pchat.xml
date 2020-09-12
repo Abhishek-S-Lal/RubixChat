@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/messageImageReceiver"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="08dp"
+        app:riv_border_width="0.5dip"
+        app:riv_corner_radius="15dp" />
+
+    <TextView
+        android:id="@+id/timeImageReceiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageImageReceiver"
+        android:layout_marginStart="60dp"
+        android:padding="4dp"
+        android:text="09:05 AM"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/messageUserImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="05dp"
+        android:src="@drawable/default_profile_image"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="0.40dp" />
+
+    <LinearLayout
+        android:id="@+id/receiverMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:background="@drawable/single_message_text_background"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/group_senderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingTop="4dp"
+                android:text="Abhishek S Lal"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:textSize="15sp"
+                android:id="@+id/receiverMessageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="2dp"
+                android:paddingStart="12dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="2dp"
+                android:text="From Receiver"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/receiverMsgTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="09:05 AM"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/senderMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/senderMessageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:background="@drawable/single_message_text_another_background"
+            android:paddingStart="12dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="2dp"
+            android:text="From Sender"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/senderMsgTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:text="09:05 AM"
+            android:textColor="@color/colorGray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:id="@+id/messageImageVsender"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="08dp"
+        android:layout_marginEnd="1dp"
+        app:riv_border_width="0.5dip"
+        app:riv_corner_radius="15dp" />
+
+    <TextView
+        android:id="@+id/timeImageSender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageImageVsender"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="10dp"
+        android:padding="4dp"
+        android:text="09:05 AM"
+        android:textColor="@color/colorGray"
+        android:textSize="12sp" />
+
+</RelativeLayout>
